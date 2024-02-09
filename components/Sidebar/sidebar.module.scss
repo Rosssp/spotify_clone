@@ -1,0 +1,31 @@
+.wrapper {
+    height: 100vh;
+    padding: var(--pad);
+    & > * {
+        display: inline-block;
+        vertical-align: top;
+    }
+    & .aside {
+        height: 100%;
+        overflow: hidden;
+        width: 300px;
+        & > *:not(:last-child) {
+            margin-bottom: var(--pad);
+        }
+    }
+}
+.library {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--pad) * 1.5);
+    padding: calc(var(--pad) * 1.5);
+}
+
+.main {
+    padding: 0 0 0 var(--pad);
+}

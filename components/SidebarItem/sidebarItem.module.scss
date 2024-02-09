@@ -1,0 +1,19 @@
+.wrapper {
+    opacity: 0.5;
+    transition: var(--trans);
+    &:hover {
+        opacity: 1;
+    }
+    & > * {
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: 100;
+        &:nth-child(2) {
+            margin-left: var(--pad);
+        }
+    }
+}
+
+.active {
+    opacity: 1;
+}
